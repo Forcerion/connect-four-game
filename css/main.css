@@ -1,0 +1,267 @@
+body  {
+    background-color: purple;
+}
+
+.game-screen {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.game-board {
+    position: relative;
+}
+
+
+.game-screen-grid__cell[data-x="0"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="0"] {
+    position: absolute;
+    top: 18px;
+    left: 546px;
+}
+
+.game-screen-grid__cell[data-x="0"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="1"] {
+    position: absolute;
+    top: 106px;
+    left: 546px;
+}
+
+.game-screen-grid__cell[data-x="0"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="2"] {
+    position: absolute;
+    top: 194px;
+    left: 546px;
+}
+
+.game-screen-grid__cell[data-x="0"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="3"] {
+    position: absolute;
+    top: 282px;
+    left: 546px;
+}
+
+.game-screen-grid__cell[data-x="0"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="4"] {
+    position: absolute;
+    top: 370px;
+    left: 546px;
+}
+
+.game-screen-grid__cell[data-x="0"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 18px;
+}
+
+.game-screen-grid__cell[data-x="1"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 106px;
+}
+
+.game-screen-grid__cell[data-x="2"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 194px;
+}
+
+.game-screen-grid__cell[data-x="3"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 282px;
+}
+
+.game-screen-grid__cell[data-x="4"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 370px;
+}
+
+.game-screen-grid__cell[data-x="5"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 458px;
+}
+
+.game-screen-grid__cell[data-x="6"][data-y="5"] {
+    position: absolute;
+    top: 458px;
+    left: 546px;
+}

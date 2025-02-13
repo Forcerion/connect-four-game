@@ -1,5 +1,5 @@
 body  {
-    background-color: purple;
+    background-color: #7945FF;
 }
 
 .game-screen {
@@ -13,6 +13,14 @@ body  {
     position: relative;
 }
 
+.game-screen-grid {
+    z-index: 20;
+}
+
+.game-screen-grid__cell {
+    height: 64px;
+    width: 64px;
+}
 
 .game-screen-grid__cell[data-x="0"][data-y="0"] {
     position: absolute;
@@ -265,3 +273,4 @@ body  {
     top: 458px;
     left: 546px;
 }
+

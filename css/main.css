@@ -141,9 +141,14 @@ body  {
     padding-left: 12px;
 }
 
-.first-rule {
-
+.list-of-rule li {
+    padding-bottom: 12px;
 }
+
+.rules {
+    color: rgba(0, 0, 0, 0.6611); 
+}
+
 
 
 

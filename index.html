@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>puissance 4</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="game-screen">
+    <div class="home-page hidden">
+      <img class="four-jeton-home-page" src="./assets/Group 12.svg" alt="" />
+      <button id="start-game-player-vs-player" class="button-player-vs-player">
+        <p class="player-vs-player">PLAY VS PLAYER</p>
+        <img
+          class="asset-player-vs-player"
+          src="./assets/player-vs-player.svg"
+          alt=""
+        />
+      </button>
+      <button class="go-to-game-rule">
+        <p class="game-rule-home-page">GAME RULES</p>
+      </button>
+    </div>
+    <div class="game-screen hidden">
       <div class="game-board">
         <svg
           width="632"
@@ -89,6 +110,19 @@
           <div class="game-screen-grid__cell" data-x="5" data-y="5"></div>
           <div class="game-screen-grid__cell" data-x="6" data-y="5"></div>
         </div>
+      </div>
+    </div>
+    <div class="rules-page">
+      <h2 class="rule-title">RULES</h2>
+      <div class="objective">
+        <h3 class="title-objective">OBJECTIVE</h3>
+        <p class="infos-objective">Be the first player to connect 4 of the same colored discs in a row (either vertically, horizontally, or diagonally).</p>
+      </div>
+      <div class="how-to-play">
+        <h3 class="title-how-to-play">HOW TO PLAY</h3>
+        <ol class="list-of-rule">
+          <li><span class="first-rule">Red goes first in the first game.</span></li>
+        </ol>
       </div>
     </div>
     <script src="./js/app.js"></script>

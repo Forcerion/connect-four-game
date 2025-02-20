@@ -1,6 +1,154 @@
 body  {
     background-color: #7945FF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.home-page {
+    width: 500px;
+    border: 3px solid #000;
+    border-radius: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.four-jeton-home-page {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 72px;
+    padding-bottom: 80px;
+}
+
+.button-player-vs-player {
+    border-radius: 20px;
+    width: 360px;
+    background-color: #FFCE67;
+    border: 3px solid #000;
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "Barlow", serif;
+}
+
+.button-player-vs-player :hover {
+    cursor: pointer;
+}
+
+.player-vs-player {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.asset-player-vs-player {
+    width: 72px;
+    height: 48px;
+}
+
+.go-to-game-rule {
+    border-radius: 20px;
+    width: 360px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid #000;
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 1);
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "Barlow", serif;
+}
+
+.go-to-game-rule :hover {
+    cursor: pointer;
+}
+
+.game-rule-home-page {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rules-page {
+    width: 480px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 3px solid #000;
+    border-radius: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.rule-title {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Barlow", serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.objective {
+    width: 412px;
+    margin-left: 32px;
+}
+
+.title-objective {
+    color: rgba(121, 69, 255, 1);
+    padding-bottom: 16px;
+}
+
+.infos-objective {
+   color: rgba(0, 0, 0, 0.6611); 
+   padding-bottom: 32px;
+}
+
+.title-how-to-play {
+    color: rgba(121, 69, 255, 1);
+    padding-bottom: 16px;
+}
+
+.how-to-play {
+    width: 412px;
+    margin-left: 32px;
+}
+
+.list-of-rule {
+    padding-left: 0;
+    padding-left: 12px;
+}
+
+.first-rule {
+
+}
+
+
+
+
+
 
 .game-screen {
     justify-content: center;
@@ -273,4 +421,3 @@ body  {
     top: 458px;
     left: 546px;
 }
-

@@ -1,5 +1,9 @@
 const $cells = document.querySelectorAll(".game-screen-grid__cell");
-const $GameScreen = document.querySelector(".game-screen");
+const $gameScreen = document.querySelector(".game-screen");
+const $homePage = document.querySelector(".home-page");
+const $gameStartButton = document.querySelector(".button-player-vs-player");
+const $gameRulesButton = document.querySelector(".go-to-game-rule");
+const $gameRulesPage = document.querySelector(".rules-page");
 
 let currentPlayer = "rouge";
 let gameBoard = [
@@ -12,6 +16,16 @@ let gameBoard = [
 ];
 
 console.log(gameBoard);
+
+$gameStartButton.addEventListener("click", function () {
+  $homePage.classList.add("hidden");
+  $gameScreen.classList.remove("hidden");
+});
+
+$gameRulesButton.addEventListener("click", function () {
+  $homePage.classList.add("hidden");
+  $gameRulesPage.classList.remove("hidden");
+});
 
 function checkWin() {
   if (
@@ -260,8 +274,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  // Check row 1
+
   if (
     gameBoard[1][0] !== "" &&
     gameBoard[1][0] === gameBoard[1][1] &&
@@ -298,8 +311,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  // Check row 2
+
   if (
     gameBoard[2][0] !== "" &&
     gameBoard[2][0] === gameBoard[2][1] &&
@@ -336,8 +348,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  // Check row 3
+
   if (
     gameBoard[3][0] !== "" &&
     gameBoard[3][0] === gameBoard[3][1] &&
@@ -374,8 +385,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  // Check row 4
+
   if (
     gameBoard[4][0] !== "" &&
     gameBoard[4][0] === gameBoard[4][1] &&
@@ -412,8 +422,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  // Check row 5
+
   if (
     gameBoard[5][0] !== "" &&
     gameBoard[5][0] === gameBoard[5][1] &&
@@ -550,16 +559,7 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  if (
-    gameBoard[5][4] !== "" &&
-    gameBoard[5][4] === gameBoard[4][5] &&
-    gameBoard[4][5] === gameBoard[3][6]
-  ) {
-    console.log("Victoire");
-    return true;
-  }
-  
-  // Check diagonals (right-to-left)
+
   if (
     gameBoard[5][6] !== "" &&
     gameBoard[5][6] === gameBoard[4][5] &&
@@ -668,9 +668,8 @@ function checkWin() {
     console.log("Victoire");
     return true;
   }
-  
-  return false;
 
+  return false;
 }
 
 const rouge = `<img src="./assets/counter-red-large.svg" alt="">`;
@@ -709,7 +708,12 @@ $cells.forEach(function ($cell) {
     }
     console.log(gameBoard);
     if (checkWin()) {
-      $GameScreen.style.pointerEvents = "none";
+      $gameScreen.style.pointerEvents = "none";
+      if (currentPlayer === "rouge") {
+        currentPlayer = "jaune";
+      } else {
+        currentPlayer = "rouge";
+      }
       setTimeout(() => {
         alert("Victoire " + currentPlayer);
       }, 50);

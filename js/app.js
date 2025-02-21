@@ -4,6 +4,8 @@ const $homePage = document.querySelector(".home-page");
 const $gameStartButton = document.querySelector(".button-player-vs-player");
 const $gameRulesButton = document.querySelector(".go-to-game-rule");
 const $gameRulesPage = document.querySelector(".rules-page");
+const $gameRulesButtonClose = document.querySelector(".button-under-rules")
+
 
 let currentPlayer = "rouge";
 let gameBoard = [
@@ -25,6 +27,11 @@ $gameStartButton.addEventListener("click", function () {
 $gameRulesButton.addEventListener("click", function () {
   $homePage.classList.add("hidden");
   $gameRulesPage.classList.remove("hidden");
+});
+
+$gameRulesButtonClose.addEventListener("click", function () {
+  $gameRulesPage.classList.add("hidden");
+  $homePage.classList.remove("hidden");
 });
 
 function checkWin() {
